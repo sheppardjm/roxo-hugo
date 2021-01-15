@@ -3,6 +3,8 @@
   height: 100vh;
   background-size: cover;
   background-position: center center;
+  background-color: #4b6667;
+  background-blend-mode: overlay;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,6 +25,9 @@
       @include mobile{
         font-size: 40px;
       }
+    }
+    h6{
+      color: #FFF;
     }
     &-buttons{
       margin: 0;
