@@ -9,22 +9,11 @@
             <p>{{ .subtitle }}</p>
           </div>
         </div>
-        {{ range first 4 (where $.Site.RegularPages "Type" "portfolio") }}
         <div class="col-lg-6 col-md-10 mx-auto">
-          <div class="site-project-item">
-            <div class="site-project-item-thumb">
-              <img src="{{ .Params.Image | absURL }}" alt="project-thumb">
-            </div>
-            <div class="site-project-item-content">
-              <span>{{ delimit .Params.category ", " }}</span>
-              <h3>{{ .Title }}</h3>
-              <a href="{{ .Permalink }}" class="read-more">view project</a>
-            </div>
-          </div>
+          <iframe allowtransparency="" frameborder="0" height="500" scrolling="no" src="https://www.strava.com/clubs/13610/latest-rides/f1f145f2bb6f40cee641f53a88a140d15c4ded42?show_rides=true" width="100%"></iframe>
         </div>
-        {{ end }}
-        <div class="col-12 text-center text-lg-left">
-          <a href="portfolio" class="site-project-cta">MORE WORKS</a>
+        <div class="col-lg-6 col-md-10 mx-auto">
+          <iframe allowtransparency="" frameborder="0" height="160" scrolling="no" src="https://www.strava.com/clubs/13610/latest-rides/f1f145f2bb6f40cee641f53a88a140d15c4ded42?show_rides=false" width="100%"></iframe> 
         </div>
       </div>
     </div>
