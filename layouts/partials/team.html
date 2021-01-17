@@ -20,9 +20,9 @@
               <h3>{{ .name }}</h3>
               <p>{{ .designation }}</p>
               <ul class="site-team-member-social">
-                <li><a href="{{ .medium | absURL }}"><i class="fa fa-medium"></i></a></li>
-                <li><a href="{{ .linkedin | absURL }}"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="{{ .instagram | absURL }}"><i class="fa fa-instagram"></i></a></li>
+                <li>{{if isset .Params .medium}}<a href="{{ .medium | absURL }}"><i class="fa fa-medium"></i></a>{{end}}</li>
+                <li>{{if isset .Param .linkedin}}<a href="{{ .linkedin | absURL }}"><i class="fa fa-linkedin"></i></a>{{end}}</li>
+                <li>{{if isset .Param .instagram}}<a href="{{ .instagram | absURL }}"><i class="fa fa-instagram"></i></a>{{end}}</li>
               </ul>
             </div>
           </div>
