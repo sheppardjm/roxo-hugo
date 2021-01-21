@@ -11,7 +11,8 @@
             {{ range .client_logos }}
             <div class="site-client-item">
               <a href="{{ .link }}">
-                <img src="{{ .thumb | absURL }}" alt="{{ .alt }}">
+                <img src="{{ .thumb | absURL }}" alt="{{ .alt }}" />
+              </a>
             </div>
             {{ end }}
           </div>
