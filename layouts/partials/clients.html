@@ -10,7 +10,8 @@
           <div class="site-client-wrapper">
             {{ range .client_logos }}
             <div class="site-client-item">
-              <img src="{{ . | absURL }}" alt="client-logo">
+              <a href="{{ .link }}">
+                <img src="{{ .thumb | absURL }}" alt="{{ .alt }}">
             </div>
             {{ end }}
           </div>
